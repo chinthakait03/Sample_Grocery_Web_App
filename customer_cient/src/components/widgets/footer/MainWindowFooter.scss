@@ -1,0 +1,14 @@
+@use "../../../assets/scss/variables.scss" as *;
+
+.main-window-footer {
+
+    background-color:$light-gray;
+    padding: 20px;
+    position: sticky;
+    bottom: 0;
+    p {
+        font-size: 14px;
+        color: $white;
+        opacity: 0.8;
+    }
+}
