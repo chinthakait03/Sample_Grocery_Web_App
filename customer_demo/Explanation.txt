@@ -1,0 +1,42 @@
+Java Optional<T> class (introduced in Java 8) is a container object used to represent the presence or absence of a value.
+Its primary purpose is to avoid NullPointerException (NPE) and 
+design cleaner APIs by explicitly forcing developers to handle the case where a value might be missing.
+
+Promises are objects that represent the eventual completion (or failure) of an asynchronous operation. 
+They are primarily used for tasks like fetching data from an API, uploading files, or handling timers.
+
+
+Built-in class / interface	Purpose
+
+AuthenticationManager =	Main interface that manages authentication.
+AuthenticationProvider =	Authenticates the user using a particular method.
+Authentication =	Holds the authenticated user's identity, credentials, and authorities.
+UserDetailsService = Loads user details, usually from a database.
+UserDetails =	Represents user details required by Spring Security.
+PasswordEncoder =	Encodes passwords and verifies submitted passwords against stored hashes.
+DaoAuthenticationProvider =	Authenticates users using UserDetailsService and PasswordEncoder.
+SecurityFilterChain =	Defines which HTTP requests require authentication and authorization.
+UsernamePasswordAuthenticationToken =	Carries a username and password during authentication, or represents an authenticated principal.
+GrantedAuthority =	Represents a permission or role authority.
+SimpleGrantedAuthority =	A built-in implementation of GrantedAuthority.
+SecurityContext =	Holds the current authentication information.
+SecurityContextHolder =	Provides access to the current security context.
+AuthenticationEntryPoint =	Handles requests that require authentication when the user is unauthenticated.
+AccessDeniedHandler =	Handles access denied for authenticated users who lack permission.
+
+
+
+Component	Purpose
+
+JwtEncoder =	Encodes and signs the JWT
+JwtClaimsSet =	Defines the claims placed in the token
+JwtEncoderParameters =	Supplies the claims and optional encoding headers
+encode() =	Creates the encoded JWT
+getTokenValue() =	Returns the final JWT string
+
+GrantedAuthority is  represents a permission or role assigned to a user.
+
+JwsHeader = It represents the header of a JWS (JSON Web Signature),
+ which describes how the token is signed.
+
+

@@ -1,0 +1,80 @@
+@use "./../../../assets/scss/variables.scss" as *;
+
+// body {
+//     background-color: $charcol !important;
+// }
+
+body {
+    background-color: $soft-cream !important;
+}
+
+.login-form {
+    margin-top: 100px;
+    background-color: $white;
+    // border: 1px solid red ;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px  rgba($charcol , 0.25);
+    // max-width: 500px;
+    // max-height: 600px;
+
+    .logo-image {
+        height: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 250px;
+        max-height: 70px;
+    }
+    .sub-text {
+
+        color: rgba($charcol , 0.7);
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+
+    .form-label {
+
+        font-size: 14px;
+    }
+    .form-control-lg {
+
+        font-size: 1rem;
+        min-height: 48px;
+        &:focus {
+            outline: 0 !important;
+            box-shadow: none !important;
+            border-color: var(--bs-border-color);
+        }
+       
+    }
+
+    .input-group-text {
+
+        color: rgba($charcol , 0.7);
+        background: none;
+        font-family: 1.25rem;
+
+        &+input {
+            border-left: 0;
+            padding-left: 0;
+            &.password-field {
+                border-right: 0;
+                
+            }
+          
+        }
+        
+
+    }
+    
+
+}
+@media screen and (width >=576px){
+    
+    .login-form {
+        min-width: 400px;
+        max-width: 450px;
+    }
+}
