@@ -2,3 +2,24 @@
 
     padding: 20px;
 }
+
+
+.main-page {
+
+    min-height: calc(100vh - 120px);
+}
+
+@media screen  and (min-width: 992px){ 
+    
+    .main-page {
+        display: flex;
+       
+    }
+
+    .main-window-content {
+
+       flex: 1;
+       height: calc(100vh - 120px);
+       overflow: auto;
+    }
+}

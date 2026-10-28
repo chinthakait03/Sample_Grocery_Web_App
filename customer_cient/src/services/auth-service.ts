@@ -28,6 +28,10 @@ export async function login( loginModel:UserLoginModel){
 
 }
 
+export function logout (){
+  removeToken();
+  window.location.href = "/login";
+}
 
 export function setToken ( token:string) {
 

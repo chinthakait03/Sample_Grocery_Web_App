@@ -1,10 +1,12 @@
 @use "../../../assets/scss/variables.scss" as *;
 
+
 .main-window-sidebar {
 
     position: fixed;
     background-color: $dark-green;
     width: 100%;
+    //max-width: 400px;
    // height: calc(100% - 120px);
     top: 80px;
     bottom: 40px;
@@ -14,7 +16,42 @@
     transition: transform 0.25s ease-in-out;
 
     &.opened {
-
         transform: translateX(0);
+        +div {
+            &::before {
+                content: '';
+                position: fixed;
+                background-color: rgba($charcol , 0.7);
+                inset: 0;
+                z-index: 9;
+            }
+        }
     }
 }
+
+
+                // top:    0;  1;
+                // bottom: 0;  1;
+                // left:   0;  1;
+                // right:  0;  1;
+
+ @media screen  and (min-width: 576px){ 
+    
+    .main-window-sidebar {
+        max-width: 400px;
+    }
+ }          
+ 
+  @media screen  and (min-width: 992px){ 
+    
+    .main-window-sidebar {
+        max-width: 400px;
+        transform: none;
+        position: static;
+       top: auto;
+       bottom: auto;
+       height: calc(100vh - 120px);
+      
+
+    }
+ } 

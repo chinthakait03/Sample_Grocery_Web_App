@@ -1,9 +1,17 @@
 import "./MainWindowSideBar.scss"
 
-const MainWindowSideBar = () => {
+interface MainWindowSidebarrParameters {
+
+    isOpen : boolean
+}
+const MainWindowSideBar = ({isOpen}:MainWindowSidebarrParameters) => {
 
         return (
-            <aside className="main-window-sidebar">Side Bar</aside>
+            <aside className={ isOpen ? "main-window-sidebar opened" : "main-window-sidebar"}>
+                sidebar
+
+                
+            </aside>
         )
 }
 
