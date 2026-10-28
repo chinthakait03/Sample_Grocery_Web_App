@@ -368,7 +368,9 @@ function CustomerForm() {
 
 
   return (
-    <div className="customer-form container" >
+    <div className="customer-form " >  
+    {/* container remove  */}
+    
      <h1>Customer Form </h1>
 
       <form onSubmit={formSubmit}>

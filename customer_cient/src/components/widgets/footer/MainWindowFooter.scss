@@ -2,13 +2,17 @@
 
 .main-window-footer {
 
-    background-color:$light-gray;
-    padding: 20px;
+    background-color:$salte-gray;
+    padding: 10px 20px;
     position: sticky;
     bottom: 0;
+    z-index: 10;
+    height: 40px;
     p {
-        font-size: 14px;
+        font-size: 13px;
         color: $white;
-        opacity: 0.8;
+        opacity: 0.9;
+        text-align: center;
     }
+   
 }

@@ -110,7 +110,9 @@ function CustomerEditForm(){
     
     
       return (
-        <div className="customer-form container" >
+        <div className="customer-form " >
+           {/* container remove  */}
+           
          <h1>Customer Edit Form of {customer?.name}({id}) </h1>
     
           <form onSubmit={formSubmit}>

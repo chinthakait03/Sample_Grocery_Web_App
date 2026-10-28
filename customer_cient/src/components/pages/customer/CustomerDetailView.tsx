@@ -54,7 +54,9 @@ function CustomerDetailView() {
 
 
   return(
-     <div className="container">
+     <div >
+       {/* container remove  */}
+       
       {!customer && <p> Loading ...</p>}
       {customer &&  (<>
       <h1>

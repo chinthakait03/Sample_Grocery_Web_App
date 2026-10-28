@@ -82,7 +82,9 @@ function CustomerList() {
   }, []);
 
   return (
-    <div className="container">
+    <div >
+       {/* container remove  */}
+       
       <div>
         <form onSubmit={(e) => search(0, e)}>
           <div className="row">
