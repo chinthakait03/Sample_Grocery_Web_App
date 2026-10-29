@@ -4,13 +4,14 @@
 .main-window-sidebar {
 
     position: fixed;
-    background-color: $dark-green;
+    background-color: $light-green;
     width: 100%;
     //max-width: 400px;
    // height: calc(100% - 120px);
     top: 80px;
     bottom: 40px;
     z-index: 11;
+    padding: 20px;
     overflow: auto;
     transform: translateX(-100%);
     transition: transform 0.25s ease-in-out;
@@ -24,6 +25,47 @@
                 background-color: rgba($charcol , 0.7);
                 inset: 0;
                 z-index: 9;
+            }
+        }
+    }
+
+    .sidebar-user-details {
+
+        img {
+            width: 61px;
+            height: 61px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    .sidebar-navition {
+
+        .sidebar-navition-title {
+
+            font-size: 20px;
+            color: $dark-green;
+        }
+
+        .menu,
+        .sub-menu {
+            padding: 0;
+            list-style: none;
+        }
+
+        .menu-item {
+
+            color: $charcol;
+        
+        > a {
+            text-decoration: none;
+            color: $charcol;
+        }
+
+        }
+        .parent-menu-item {
+            > p {
+                margin: 0;
             }
         }
     }
@@ -51,6 +93,15 @@
        top: auto;
        bottom: auto;
        height: calc(100vh - 120px);
+
+       &.opened {
+       
+        +div {
+            &::before {
+                display: none;
+            }
+        }
+    }
       
 
     }
