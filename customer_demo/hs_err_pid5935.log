@@ -637,34 +637,34 @@ No events
 
 Internal exceptions (20 events):
 Event: 4165.087 Thread 0x0000775af82efb00 Implicit null exception at 0x0000775b7ddadc6c to 0x0000775b7ddae245
-Event: 4165.087 Thread 0x0000775af82efb00 Exception <a 'java/lang/NullPointerException'{0x00000006ab6c74c0}> (0x00000006ab6c74c0) 
+Event: 4165.087 Thread 0x0000775af82efb00 Exception <NavLink 'java/lang/NullPointerException'{0x00000006ab6c74c0}> (0x00000006ab6c74c0) 
 thrown [./src/hotspot/share/runtime/sharedRuntime.cpp, line 681]
 Event: 4165.087 Thread 0x0000775af82efb00 Implicit null exception at 0x0000775b7ddadc6c to 0x0000775b7ddae245
-Event: 4165.087 Thread 0x0000775af82efb00 Exception <a 'java/lang/NullPointerException'{0x00000006ab6c7e70}> (0x00000006ab6c7e70) 
+Event: 4165.087 Thread 0x0000775af82efb00 Exception <NavLink 'java/lang/NullPointerException'{0x00000006ab6c7e70}> (0x00000006ab6c7e70) 
 thrown [./src/hotspot/share/runtime/sharedRuntime.cpp, line 681]
 Event: 4165.496 Thread 0x0000775af82efb00 Implicit null exception at 0x0000775b7ddadc6c to 0x0000775b7ddae245
-Event: 4165.496 Thread 0x0000775af82efb00 Exception <a 'java/lang/NullPointerException'{0x00000006ac2cdc58}> (0x00000006ac2cdc58) 
+Event: 4165.496 Thread 0x0000775af82efb00 Exception <NavLink 'java/lang/NullPointerException'{0x00000006ac2cdc58}> (0x00000006ac2cdc58) 
 thrown [./src/hotspot/share/runtime/sharedRuntime.cpp, line 681]
 Event: 4165.496 Thread 0x0000775af82efb00 Implicit null exception at 0x0000775b7ddadc6c to 0x0000775b7ddae245
-Event: 4165.496 Thread 0x0000775af82efb00 Exception <a 'java/lang/NullPointerException'{0x00000006ac2ce558}> (0x00000006ac2ce558) 
+Event: 4165.496 Thread 0x0000775af82efb00 Exception <NavLink 'java/lang/NullPointerException'{0x00000006ac2ce558}> (0x00000006ac2ce558) 
 thrown [./src/hotspot/share/runtime/sharedRuntime.cpp, line 681]
 Event: 4165.501 Thread 0x0000775af82efb00 Implicit null exception at 0x0000775b7ddadc6c to 0x0000775b7ddae245
-Event: 4165.501 Thread 0x0000775af82efb00 Exception <a 'java/lang/NullPointerException'{0x00000006ac2df5a0}> (0x00000006ac2df5a0) 
+Event: 4165.501 Thread 0x0000775af82efb00 Exception <NavLink 'java/lang/NullPointerException'{0x00000006ac2df5a0}> (0x00000006ac2df5a0) 
 thrown [./src/hotspot/share/runtime/sharedRuntime.cpp, line 681]
 Event: 4165.501 Thread 0x0000775af82efb00 Implicit null exception at 0x0000775b7ddadc6c to 0x0000775b7ddae245
-Event: 4165.501 Thread 0x0000775af82efb00 Exception <a 'java/lang/NullPointerException'{0x00000006ac2dfe88}> (0x00000006ac2dfe88) 
+Event: 4165.501 Thread 0x0000775af82efb00 Exception <NavLink 'java/lang/NullPointerException'{0x00000006ac2dfe88}> (0x00000006ac2dfe88) 
 thrown [./src/hotspot/share/runtime/sharedRuntime.cpp, line 681]
 Event: 4165.536 Thread 0x0000775b0c046470 Implicit null exception at 0x0000775b7ddadc6c to 0x0000775b7ddae245
-Event: 4165.536 Thread 0x0000775b0c046470 Exception <a 'java/lang/NullPointerException'{0x00000006ac6ba2c8}> (0x00000006ac6ba2c8) 
+Event: 4165.536 Thread 0x0000775b0c046470 Exception <NavLink 'java/lang/NullPointerException'{0x00000006ac6ba2c8}> (0x00000006ac6ba2c8) 
 thrown [./src/hotspot/share/runtime/sharedRuntime.cpp, line 681]
 Event: 4165.540 Thread 0x0000775b0c046470 Implicit null exception at 0x0000775b7ddadc6c to 0x0000775b7ddae245
-Event: 4165.540 Thread 0x0000775b0c046470 Exception <a 'java/lang/NullPointerException'{0x00000006ac6bac80}> (0x00000006ac6bac80) 
+Event: 4165.540 Thread 0x0000775b0c046470 Exception <NavLink 'java/lang/NullPointerException'{0x00000006ac6bac80}> (0x00000006ac6bac80) 
 thrown [./src/hotspot/share/runtime/sharedRuntime.cpp, line 681]
 Event: 4165.737 Thread 0x0000775b0c046470 Implicit null exception at 0x0000775b7ddadc6c to 0x0000775b7ddae245
-Event: 4165.737 Thread 0x0000775b0c046470 Exception <a 'java/lang/NullPointerException'{0x00000006ab0346f0}> (0x00000006ab0346f0) 
+Event: 4165.737 Thread 0x0000775b0c046470 Exception <NavLink 'java/lang/NullPointerException'{0x00000006ab0346f0}> (0x00000006ab0346f0) 
 thrown [./src/hotspot/share/runtime/sharedRuntime.cpp, line 681]
 Event: 4165.737 Thread 0x0000775b0c046470 Implicit null exception at 0x0000775b7ddadc6c to 0x0000775b7ddae245
-Event: 4165.737 Thread 0x0000775b0c046470 Exception <a 'java/lang/NullPointerException'{0x00000006ab035008}> (0x00000006ab035008) 
+Event: 4165.737 Thread 0x0000775b0c046470 Exception <NavLink 'java/lang/NullPointerException'{0x00000006ab035008}> (0x00000006ab035008) 
 thrown [./src/hotspot/share/runtime/sharedRuntime.cpp, line 681]
 
 VM Operations (20 events):

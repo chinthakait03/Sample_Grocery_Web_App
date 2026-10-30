@@ -1,13 +1,21 @@
-import {  BsBarChartFill, BsBoxFill,  BsBriefcaseFill,  BsCartFill, BsDot,  BsFillGearFill,  BsFillHouseDoorFill, BsFillPeopleFill,  BsPower } from "react-icons/bs";
+import {  BsBarChartFill, BsBoxFill,  BsBriefcaseFill,  BsCartFill, BsChevronRight, BsCircle,  BsFillGearFill,  BsFillHouseDoorFill, BsFillPeopleFill,  BsPower } from "react-icons/bs";
 import { logout } from "../../../services/auth-service";
 import "./MainWindowSideBar.scss"
 import ProfileImage from "../../../assets/images/user-dummy-image.jpg"
+import {  NavLink } from "react-router-dom";
 
 interface MainWindowSidebarrParameters {
 
     isOpen : boolean
 }
 const MainWindowSideBar = ({isOpen}:MainWindowSidebarrParameters) => {
+
+
+    function handleToggleExpand (e:React.MouseEvent<HTMLParagraphElement>){
+
+        const parent = e.currentTarget.parentElement;
+        parent?.classList.toggle("opened");
+    }
 
         return (
             <aside className={ isOpen ? "main-window-sidebar opened" : "main-window-sidebar"}>
@@ -24,57 +32,57 @@ const MainWindowSideBar = ({isOpen}:MainWindowSidebarrParameters) => {
                 <nav className="sidebar-navition">
                     <h3 className="sidebar-navition-title">MAIN NAVIGATION</h3>
                     <ul className="menu">
-                        <li className="menu-item"><a > <BsFillHouseDoorFill/> Dashboard </a></li>
+                        <li className="menu-item"><NavLink to="/" end> <BsFillHouseDoorFill/> Dashboard </NavLink></li>
 
-                        <li className="menu-item parent-menu-item"> 
-                            <p> <BsCartFill/> Sales</p>
+                        <li className="menu-item parent-menu-item "> 
+                            <p onClick={handleToggleExpand}> <BsCartFill/> Sales  <BsChevronRight className="chevron"/> </p>
                             <ul className="sub-menu">
-                                <li className="menu-item"><a href="#"> <BsDot/> Orders</a></li>
-                                <li className="menu-item"><a href="#"> <BsDot/>  Invoices</a></li>
+                                <li className="menu-item"><a href="#"> <BsCircle/> Orders</a></li>
+                                <li className="menu-item"><a href="#"> <BsCircle/>  Invoices</a></li>
                             </ul>
                         </li>
 
                         <li className="menu-item parent-menu-item">
-                            <p> <BsBoxFill/> Inventory </p>
+                            <p onClick={handleToggleExpand}> <BsBoxFill/> Inventory <BsChevronRight className="chevron"/></p>
                             <ul className="sub-menu">
-                                <li className="menu-item"><a href="#"> <BsDot/> Products</a></li>
-                                <li className="menu-item"><a href="#"> <BsDot/> Categories</a></li>
-                                <li className="menu-item"><a href="#"> <BsDot/> Stock</a></li>
+                                <li className="menu-item"><a href="#"> <BsCircle/> Products</a></li>
+                                <li className="menu-item"><a href="#"> <BsCircle/> Categories</a></li>
+                                <li className="menu-item"><a href="#"> <BsCircle/> Stock</a></li>
                             </ul>
                         </li>
 
                         <li className="menu-item parent-menu-item">
-                            <p> <BsFillPeopleFill/> Customers </p>
+                            <p onClick={handleToggleExpand}> <BsFillPeopleFill/> Customers <BsChevronRight className="chevron"/></p>
                             <ul className="sub-menu">
-                                <li className="menu-item"><a href="#">  <BsDot/> Customer List </a></li>
-                                <li className="menu-item"><a href="#">  <BsDot/> Loyalty </a></li>
+                                <li className="menu-item"><NavLink to="/customers" end>  <BsCircle/> Customer List </NavLink></li>
+                                <li className="menu-item"><NavLink to="/customers/add" end>  <BsCircle/> Add customer </NavLink></li>
                                 
                             </ul>
                         </li>
 
                         <li className="menu-item parent-menu-item">
-                            <p> <BsBriefcaseFill/> Suppliers </p>
+                            <p onClick={handleToggleExpand}> <BsBriefcaseFill/> Suppliers <BsChevronRight className="chevron"/></p>
                             <ul className="sub-menu">
-                                <li className="menu-item"><a href="#">  <BsDot/> Supplier List </a></li>
-                                <li className="menu-item"><a href="#">  <BsDot/> Purchases </a></li>
+                                <li className="menu-item"><a href="#">  <BsCircle/> Supplier List </a></li>
+                                <li className="menu-item"><a href="#">  <BsCircle/> Purchases </a></li>
                                 
                             </ul>
                         </li>
 
                         <li className="menu-item parent-menu-item">
-                            <p> <BsBarChartFill/> Reports </p>
+                            <p onClick={handleToggleExpand}> <BsBarChartFill/> Reports <BsChevronRight className="chevron"/></p>
                             <ul className="sub-menu">
-                                <li className="menu-item"><a href="#">  <BsDot/> Sales Report </a></li>
-                                <li className="menu-item"><a href="#">  <BsDot/> Inventory Report </a></li>
+                                <li className="menu-item"><a href="#">  <BsCircle/> Sales Report </a></li>
+                                <li className="menu-item"><a href="#">  <BsCircle/> Inventory Report </a></li>
                                 
                             </ul>
                         </li>
 
                         <li className="menu-item parent-menu-item">
-                            <p> <BsFillGearFill/> Settings </p>
+                            <p onClick={handleToggleExpand}> <BsFillGearFill/> Settings <BsChevronRight className="chevron"/></p>
                             <ul className="sub-menu">
-                                <li className="menu-item"><a href="#">  <BsDot/> Users </a></li>
-                                <li className="menu-item"><a href="#">  <BsDot/> Roles </a></li>
+                                <li className="menu-item"><a href="#">  <BsCircle/> Users </a></li>
+                                <li className="menu-item"><a href="#">  <BsCircle/> Roles </a></li>
                                 
                             </ul>
                         </li>

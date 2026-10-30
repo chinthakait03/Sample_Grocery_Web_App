@@ -19,8 +19,8 @@ function App() {
       <About /> */}
 
       {/* <div className="container py-5 d-flex gap-5">
-      <Link className="btn btn-info" to="/customers/add">Add Customer</Link>
-      <Link className="btn btn-info" to="/customers"> Show Customer</Link>
+      <NavLink className="btn btn-info" to="/customers/add">Add Customer</NavLink>
+      <NavLink className="btn btn-info" to="/customers"> Show Customer</NavLink>
       </div> */}
 
       {/* <Routes>

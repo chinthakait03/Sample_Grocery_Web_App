@@ -7,6 +7,7 @@ import CustomerEditForm from "../components/pages/customer/CustomerEditForm";
 import {  Routes } from "react-router-dom";
 import ProtectedRoutes from "./ProtectedRoute";
 import PublicRoutes from "./PublicRoutes";
+import Dashboard from "../components/pages/dashboard/Dashboard";
 
 const AppRoutes = ()  =>  {
 
@@ -20,6 +21,8 @@ const AppRoutes = ()  =>  {
        
 
          <Route element = {<ProtectedRoutes/>}>
+         <Route path="/" element={<Dashboard/>}/>
+          <Route path="/dashboard" element={<Dashboard/>}/>
           <Route path="/customers">
           <Route index element={<CustomerList />} />
           <Route path="add" element={<CustomerForm key="customer-insert"/>} /> 
