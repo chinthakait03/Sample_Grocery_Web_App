@@ -12,7 +12,7 @@ import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 
 @Entity 
-public class Role {
+public class Role extends AuditableEntity{
     
     @Id 
     @GeneratedValue (strategy = GenerationType.IDENTITY)
