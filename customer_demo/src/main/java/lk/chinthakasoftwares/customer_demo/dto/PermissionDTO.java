@@ -1,9 +1,10 @@
 package lk.chinthakasoftwares.customer_demo.dto;
 
-public class RoleInsertResponseDTO {
+public class PermissionDTO {
     
     private Integer id;
-    private  String name;
+    private String name;
+    private String module;
 
     
     public Integer getId() {
@@ -17,6 +18,12 @@ public class RoleInsertResponseDTO {
     }
     public void setName(String name) {
         this.name = name;
+    }
+    public String getModule() {
+        return module;
+    }
+    public void setModule(String module) {
+        this.module = module;
     }
 
     
