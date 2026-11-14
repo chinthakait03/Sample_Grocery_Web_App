@@ -13,8 +13,10 @@
     "axios": "^1.20.0",
     "bootstrap": "^5.3.8",
     "dayjs": "^1.11.23",
+    "install": "^0.13.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
+    "react-dual-listbox": "^6.1.0",
     "react-icons": "^5.7.0",
     "react-router-dom": "^7.18.3"
   },

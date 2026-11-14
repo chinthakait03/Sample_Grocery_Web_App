@@ -82,7 +82,7 @@ const MainWindowSideBar = ({isOpen}:MainWindowSidebarrParameters) => {
                             <p onClick={handleToggleExpand}> <BsFillGearFill/> Settings <BsChevronRight className="chevron"/></p>
                             <ul className="sub-menu">
                                 <li className="menu-item"><a href="#">  <BsCircle/> Users </a></li>
-                                <li className="menu-item"><a href="#">  <BsCircle/> Roles </a></li>
+                                <li className="menu-item"><NavLink to= "/roles" >  <BsCircle/> Roles </NavLink></li>
                                 
                             </ul>
                         </li>

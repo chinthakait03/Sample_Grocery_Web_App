@@ -74,3 +74,10 @@ export function getPriviewPageNumbers<T>(page:Page<T> , previewCount:number = 5 
   return pageNumber;
 }
 
+export interface AuditUserModel {
+
+  id:number;
+  name:string;
+  
+}
+

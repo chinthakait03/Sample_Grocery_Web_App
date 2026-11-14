@@ -7,8 +7,9 @@
 // import LoginForm from "./components/user/LoginForm";
 // import About from "./components/About";
 // import Home from "./components/Home";
-
+import "./App.scss"
 import AppRoutes from "./routes/AppRoutes";
+import 'react-dual-listbox/lib/react-dual-listbox.css';
 
 function App() {
   return (

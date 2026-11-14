@@ -8,6 +8,8 @@ import {  Routes } from "react-router-dom";
 import ProtectedRoutes from "./ProtectedRoute";
 import PublicRoutes from "./PublicRoutes";
 import Dashboard from "../components/pages/dashboard/Dashboard";
+import RoleList from "../components/pages/role/RoleList";
+import RoleForm from "../components/pages/role/RoleForm";
 
 const AppRoutes = ()  =>  {
 
@@ -21,13 +23,25 @@ const AppRoutes = ()  =>  {
        
 
          <Route element = {<ProtectedRoutes/>}>
+
          <Route path="/" element={<Dashboard/>}/>
           <Route path="/dashboard" element={<Dashboard/>}/>
+
           <Route path="/customers">
           <Route index element={<CustomerList />} />
           <Route path="add" element={<CustomerForm key="customer-insert"/>} /> 
           <Route path=":id" element={<CustomerDetailView />} />
           <Route path=":id/edit" element={<CustomerEditForm />}/>
+         </Route> 
+
+         <Route path="/roles">
+          <Route index element={<RoleList />} />
+          <Route path="add" element = {<RoleForm/>}/>
+
+          {/* <Route path="add" element={<CustomerForm key="customer-insert"/>} /> 
+          <Route path=":id" element={<CustomerDetailView />} />
+          <Route path=":id/edit" element={<CustomerEditForm />}/> */}
+          
          </Route> 
 
          </Route>

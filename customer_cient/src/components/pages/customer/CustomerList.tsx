@@ -12,8 +12,11 @@ function CustomerList() {
   const [mobile, setMobile] = useState("");
   const [nic, setNic] = useState("");
   const [pageSize, setPageSize] = useState(10);
+
+
   const navigate = useNavigate();
   const initialized = useRef(false);
+
   const [dataPage, setDataPage] = useState<Page<CustomerDatatModel>>();
 
   async function search(
@@ -84,7 +87,7 @@ function CustomerList() {
   return (
     <div >
        {/* container remove  */}
-       
+       <h1>Customer List</h1>
       <div>
         <form onSubmit={(e) => search(0, e)}>
           <div className="row">
@@ -207,6 +210,7 @@ function CustomerList() {
                       <button className="btn btn-info btn-sm d-inline-flex align-item-center gap-1" 
                       onClick={() => showCustomer(customer.id)} >  <BsInfoCircle />  Detail</button>
                       </div>
+                      
                     </td>
                   </tr>
                 );
